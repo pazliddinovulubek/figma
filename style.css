@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  background: goldenrod;
+  font-family: sans-serif;
+}
+nav h1{
+  font-size: 33px;
+  color: white;
+}
+nav .right-nav{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+}
+.right-nav a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.right-nav svg{
+  display: none;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.left-text{
+  width: 400px;
+}
+
+.left-text h1{
+  font-size: 44px;
+  font-family: sans-serif;
+  color: goldenrod;
+}
+.left-text p{
+  font-size: 18px;
+  color: goldenrod;
+  font-family: sans-serif;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+
+.btn-div{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.btn-div button{
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background: goldenrod;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+
+main img{
+  width: 750px;
+  border-radius: 4px;
+}
+
+footer{
+  background: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cart-footer{
+  width: 350px;
+  font-family: sans-serif;
+  color: white;
+  padding: 10px;
+}
+.cart-footer p{
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+
+
+
+@media(max-width:400px){
+  .right-nav a{
+    display: none;
+  }
+  .right-nav svg{
+    display: block;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .left-text{
+width: 350px;
+    text-align: center;
+  }
+  .left-text h1{
+    font-size: 32px;
+  }
+  .left-text p{
+    font-size: 15px;
+  }
+  .btn-div{
+    display: flex;
+    justify-content: center;
+  }
+  main img{
+    width: 350px;
+    margin-top: 70px;
+  }
+  footer{
+    display: flex;
+   flex-direction: column; 
+   text-align: center;
+  }
+  footer h1{
+    text-align: center;
+  }
+
+  footer .cart-footer{
+    border-bottom: 2px solid white;
+  }
+}
